@@ -40,6 +40,7 @@ class Calc {
     if (isNaN(this.#value[this.#value.length - 1])) {
       return null
     }
+
     this.#value = this.#value.concat(opValue)
     this.#output()
     this.#isDot = false
@@ -67,7 +68,7 @@ class Calc {
 
   static init = () => {
     this.#load()
-    // this.#output()
+    this.#output()
     console.log('Calc is init')
   }
 }
